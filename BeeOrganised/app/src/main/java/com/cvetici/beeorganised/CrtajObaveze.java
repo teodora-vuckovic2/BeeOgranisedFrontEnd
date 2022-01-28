@@ -297,8 +297,8 @@ public class CrtajObaveze extends View {
                     angle2 = (float) (180 * angle2 / Math.PI);
                     angle1 = (float) (180 * angle1 / Math.PI);
                     canvas.drawArc(osnovaKruga, angle1, angle2 , true, paint);
-                    canvas.drawArc(osnovaKruga,angle1,1,true,bela);
-                    canvas.drawArc(osnovaKruga,angle2+angle1-1,1,true,bela);
+                    canvas.drawArc(osnovaKruga,angle1,2,true,bela);
+                    canvas.drawArc(osnovaKruga,angle2+angle1-1,2,true,bela);
                     clickListener(angle1,angle2,canvas,item);
 
 
@@ -313,8 +313,8 @@ public class CrtajObaveze extends View {
                     angle2 = (float) (180 * angle2 / Math.PI);
                     angle1 = (float) (180 * angle1 / Math.PI);
                     canvas.drawArc(osnovaKruga, angle1 , angle2 , true, paint);
-                    canvas.drawArc(osnovaKruga,angle1,1,true,bela);
-                    canvas.drawArc(osnovaKruga,angle2+angle1-1,1,true,bela);
+                    canvas.drawArc(osnovaKruga,angle1,2,true,bela);
+                    canvas.drawArc(osnovaKruga,angle2+angle1-1,2,true,bela);
                     clickListener(angle1,angle2,canvas,item);
 
                 }
@@ -342,7 +342,7 @@ public class CrtajObaveze extends View {
             float angle1 = (float) ((Math.PI / 6) * loc1 - Math.PI / 2);
             float angle3 = (float) ((Math.PI / 6) * 11.99f - Math.PI / 2)-angle1;
             canvas.drawArc(osnovaKruga, (float) (180 * angle1 / Math.PI), (float) (180 * angle3 / Math.PI), true, paint);
-            canvas.drawArc(osnovaKruga, (float) (180 * angle1 / Math.PI), (float) 1, true, bela);
+            canvas.drawArc(osnovaKruga, (float) (180 * angle1 / Math.PI), (float) 2, true, bela);
             clickListener((float)(180 * angle1 / Math.PI),(float)(180 * angle3 / Math.PI),canvas,item);
         }
     }
